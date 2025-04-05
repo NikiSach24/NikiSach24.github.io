@@ -54,6 +54,10 @@ body {
     .link {
         color: white;
     }
+
+    .comp_page {
+        color: white;
+    }
 }
 
 
@@ -104,6 +108,10 @@ body {
     }
 
     .link {
+        color: black;
+    }
+  
+    .comp_page {
         color: black;
     }
 }
