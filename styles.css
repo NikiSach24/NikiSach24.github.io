@@ -395,11 +395,11 @@ body {
 
 .comp_menu {
  display: grid;
- grid-template-columns: repeat(5, auto);;
+ grid-template-columns: repeat(5, auto);
  grid-auto-rows: 100%;
  align-items: center;
  justify-content: center;
- height: 100%;
+ height: auto;
 }
 
 .hinterval {
