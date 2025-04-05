@@ -281,6 +281,7 @@ body {
  position: sticky;
  width: 100%;
  height: 10%;
+ minheight: 100px;
  top: 0;
  border-radius: 35px / 0px 0px 35px 35px;
  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
@@ -317,46 +318,6 @@ body {
   opacity: 0;
   pointer-events: none;
   z-index: 9999;
-}
-
-@keyframes menu_open {
-  from {
-    left: 200%;
-    opacity: 0;
-  }
-  to {
-    left: 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes menu_close {
-  from {
-    left: 100%;
-    opacity: 1;
-  }
-  to {
-    left: 200%;
-    opacity: 0;
-  }
-}
-
-@keyframes menu_shadow_open {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes menu_shadow_close {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 .interval {
@@ -401,15 +362,6 @@ body {
 .minterval {
   height: 10px;
   width: 100%;
-}
-
-@keyframes animwall {
-  from {
-    left: 150%;
-  }
-  to {
-    left: 50%;
-  }
 }
 
 .wall1 {
@@ -470,4 +422,57 @@ body {
  font-weight: 400;
  font-style: normal;
  text-decoration: none;
+}
+
+
+/* animations */
+@keyframes menu_open {
+  from {
+    left: 200%;
+    opacity: 0;
+  }
+  to {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes menu_close {
+  from {
+    left: 100%;
+    opacity: 1;
+  }
+  to {
+    left: 200%;
+    opacity: 0;
+  }
+}
+
+@keyframes menu_shadow_open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menu_shadow_close {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animwall {
+  from {
+    left: 150%;
+  }
+  to {
+    left: 50%;
+  }
 }
