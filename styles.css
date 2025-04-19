@@ -35,6 +35,10 @@ body {
         color: white;
     }
 
+    .notice {
+        color: white;
+    }
+
     .top {
         background-color: #2e0236;
     }
@@ -88,6 +92,10 @@ body {
     }
 
     .bold_page_text {
+        color: black;
+    }
+
+    .notice {
         color: black;
     }
 
@@ -280,8 +288,8 @@ body {
 .top {
   position: sticky;
   width: 100%;
-  min-height: 120px;
-  max-height: 180px;
+  min-height: 100px;
+  height: 10%;
   top: 0;
   border-radius: 35px / 0px 0px 35px 35px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
@@ -290,7 +298,7 @@ body {
 
 .title {
  user-select: none;
- font-size: 85px;
+ font-size: 75px;
  font-family: "Dongle", sans-serif;
  font-weight: 400;
  font-style: normal;
@@ -396,34 +404,48 @@ body {
 .comp_menu {
  display: grid;
  grid-template-columns: repeat(5, auto);
- grid-auto-rows: 100%;
  align-items: center;
  justify-content: center;
- height: auto;
+ height: 100%;
 }
 
 .hinterval {
-  height: auto;
   width: 25px;
 }
 
 .comp_title {
  user-select: none;
- font-size: 85px;
+ font-size: 75px;
  font-family: "Dongle", sans-serif;
  font-weight: 400;
  font-style: normal;
+ transform: translate(0%, -5%);
 }
 
 .comp_page {
  user-select: none;
- font-size: 35px;
+ font-size: 30px;
  font-family: "Lexend", sans-serif;
  font-weight: 400;
  font-style: normal;
  text-decoration: none;
 }
 
+footer {
+  width: 100%;
+  height: 40%;
+  border-radius: 35px / 35px 35px 0px 0px;
+  background: #44444477;
+}
+
+.notice {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  text-decoration: none;
+  top: -50px;
+}
 
 /* animations */
 @keyframes menu_open {
