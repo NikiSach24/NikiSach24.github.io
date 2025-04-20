@@ -3,6 +3,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
+  touch-action: none;
 }
 
 @media (prefers-color-scheme: dark) {
