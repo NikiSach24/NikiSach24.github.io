@@ -91,12 +91,20 @@ body {
   height: 100%;
 }
 
+.wall1 {
+ animation: manimwall 1s ease-out forwards;
+}
+
 }
 
 @media (min-width: 699px) {
 
 .background_image {
   width: 100%;
+}
+
+.wall1 {
+ animation: animwall 1s ease-out forwards;
 }
 
 }
@@ -212,10 +220,6 @@ footer a {
   text-decoration: none;
   font-family: sans-serif;
   color: black;
-}
-
-.wall1 {
- animation: animwall 1s ease-out forwards;
 }
 
 .wall2 {
