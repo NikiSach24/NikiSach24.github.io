@@ -3,6 +3,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
+  touch-action: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,7 +85,7 @@ body {
     }
 }
 
-@media (max-width: 925px) {
+@media (max-width: 700px) {
 
 .background_image {
   height: 100%;
@@ -92,7 +93,7 @@ body {
 
 }
 
-@media (min-width: 925px) {
+@media (min-width: 699px) {
 
 .background_image {
   width: 100%;
@@ -307,8 +308,19 @@ footer {
     height: 0%;
   }
   to {
-    width: 50%;
+    width: 65%;
     height: 60%;
+  }
+}
+
+@keyframes manimwall {
+  from {
+    width: 0%;
+    height: 0%;
+  }
+  to {
+    width: 90%;
+    height: 75%;
   }
 }
 
