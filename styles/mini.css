@@ -1,0 +1,19 @@
+.left_img {
+    position: absolute;
+    left: 50px;
+    border-radius: 20px;
+    width: 250px;
+    user-select: none;
+}
+
+.description {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: left;
+    width: calc(100% - 330px);
+    left: 330px;
+}
