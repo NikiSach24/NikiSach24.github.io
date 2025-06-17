@@ -7,7 +7,7 @@
     }
 
     .background {
-        background: url("file:///C:/Users/sachu/Documents/MySite/images/picture_dark.png") center/cover no-repeat;
+        background: url("https://raw.githubusercontent.com/NikiSach24/NikiSach24.github.io/refs/heads/main/images/picture_dark.png") center/cover no-repeat;
     }
 }
 
@@ -20,7 +20,7 @@
     }
 
     .background {
-        background: url("file:///C:/Users/sachu/Documents/MySite/images/picture_light.png") center/cover no-repeat;
+        background: url("https://raw.githubusercontent.com/NikiSach24/NikiSach24.github.io/refs/heads/main/images/picture_light.png") center/cover no-repeat;
     }
 }
 
