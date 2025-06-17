@@ -1,164 +1,162 @@
 <html>
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>NikiSach24 - Today</title>
-  <link rel="stylesheet" href="styles.css">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
- </head>
- 
- <body>
-  <div class="top">
-   <a class="logo_a" href="/" title="NikiSach24 - Today">
-    <img class="logo" src="icons/logo.png" alt="logo" draggable="false">
-   </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Today</title>
+      
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+      
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/welcome.css">
+        <link rel="stylesheet" href="styles/section.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
    
-   <span class="title">Today</span>
-   
-   <div class="comp_menu">
-    <span class="comp_title">Today</span>
-    <div class="hinterval"></div>
-    <a class="comp_page" href="/aboutme">About me</a>
-   </div>
-   
-   <img class="menu_button" src="icons/menu_button.png" alt="menu" draggable="false" onclick="open_menu()"/>
-   <center><a class="notice" href="https://nikisach24.github.io/games/Easter/main">Congratulations on Easter! GAME</a></center>
-  </div>
-  
-  <div class="interval"></div>
-  <div class="interval"></div>
-  
-  <div class="wall wall1">
-   <div class="minterval"></div>
-   <center><span class="headline">News</span></center>
-   <div class="minterval"></div>
-   
-   <center><div class="separator"></div></center>
-   
-   <div class="minterval"></div>
-   <span class="text">Coming soon…</span>
-   <div class="minterval"></div>
-   <a class="link">more</a>
-   <div class="interval"></div>
-  </div>
-  
-  <div class="interval"></div>
-  <div class="minterval"></div>
-  
-  <div class="wall wall2">
-   <div class="minterval"></div>
-   <center><span class="headline">New Programs</span></center>
-   <div class="minterval"></div>
-   
-   <center><div class="separator"></div></center>
-   
-   <div class="minterval"></div>
-   <span class="text">Coming soon…</span>
-   <div class="minterval"></div>
-   <a class="link">more</a>
-   <div class="interval"></div>
-  </div>
-  
-  <div class="interval"></div>
-  <div class="minterval"></div>
-  
-  <div class="wall wall3">
-   <div class="minterval"></div>
-   <center><span class="headline">New Games</span></center>
-   <div class="minterval"></div>
-   
-   <center><div class="separator"></div></center>
-   
-   <div class="minterval"></div>
-   <span class="text">Coming soon…</span>
-   <div class="minterval"></div>
-   <a class="link">more</a>
-   <div class="interval"></div>
-  </div>
-  
-  <div class="menu_shadow" id="menu_shadow">
-   <div class="menu" id="menu">
-    <img class="menu_close" src="icons/close.png" alt="close" draggable="false" onclick="close_menu()"/>
-    <div class="interval"></div>
-    <div class="interval"></div>
-    
-    <a class="bold_page_text" href="/">Today</a>
-    <div class="interval"></div>
-    <a class="page_text" href="/aboutme">About me</a>
-   </div>
-  </div>
-  <div class="interval"></div>
-  <div class="minterval"></div>
-  <footer>
-    <table class="footer_table">
-      <tr class="table_name">
-        <td>Pages</td>
-        <td>My Social Networks</td>
-        <td>My Projects</td>
-      </tr>
-      <tr>
-        <td><button class="table_button">Today</button></td>
-        <td><button class="table_button">GitHub</button></td>
-        <td><button class="table_button">3D Graphic</button></td>
-      </tr>
-      <tr>
-        <td><button class="table_button">News</button></td>
-        <td><button class="table_button">Scratch</button></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><button class="table_button">Programs</button></td>
-        <td><button class="table_button">X</button></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><button class="table_button">Games</button></td>
-        <td><button class="table_button">YouTube</button></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><button class="table_button">Plugins</button></td>
-        <td><button class="table_button">Discord</button></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><button class="table_button">Thanks</button></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-   <div class="interval"></div>
-  </footer>
-  
-  <script>
-   
-    function close_menu() {
-      const menu_shadow = document.getElementById('menu_shadow');
-      const menu = document.getElementById('menu');
+    <body>
 
-      menu_shadow.style.animation = 'menu_shadow_close 0.5s ease-out forwards';
-      menu.style.animation = 'menu_close 0.5s ease-out forwards';
+        <!-- Navigation -->
+      
+        <header id="header">
+            <div class="menu">
+                <a class="menu_logo_a" href="/" title="NikiSach24 - Today">
+                    <img src="icons/logo.png" alt="logo" draggable="false">
+                    <span>NikiSach24</span>
+                </a>
 
-      menu.style.pointerEvents = 'none';
-      menu_shadow.style.pointerEvents = 'none';
-    
-    }
+                <nav>
+                    <ul>
+                        <li class="selected_tab">
+                            <a href="/">Today</a>
+                        </li>
+                        <li class="tab">
+                            <a href="/news">News</a>
+                        </li>
+                        <li class="tab">
+                            <a href="/programs">Programs</a>
+                        </li>
+                        <li class="tab">
+                            <a href="/games">Games</a>
+                        </li>
+                        <li class="tab">
+                            <a href="/Holidays">Holidays</a>
+                        </li>
+                        <li class="tab">
+                            <a href="/aboutme">About Me</a>
+                        </li>
+                    </ul>
+                </nav>
 
-    function open_menu() {
-      const menu_shadow = document.getElementById('menu_shadow');
-      const menu = document.getElementById('menu');
+                <a class="menu_github_a" href="https://github.com/NikiSach24">
+                    <img src="icons/github.png" alt="github" draggable="false">
+                </a>
+            </div>
+         
+            <img class="menu_button" src="icons/menu_button.png" alt="menu button" draggable="false" onclick="open_menu()"/>
+        </header>
 
-      menu_shadow.style.animation = 'menu_shadow_open 0.5s ease-out forwards';
-      menu.style.animation = 'menu_open 0.5s ease-out forwards';
-    
-      menu_shadow.style.pointerEvents = 'auto';
-      menu.style.pointerEvents = 'auto';
-    }
 
-  </script>
- </body>
+        <!-- Main -->
+        
+        <main>
+            <div class="background"></div>
+
+            <!-- Text Gradient -->
+
+            <div class="welcome_img" id="IImg"></div>
+            <span class="I" id="I">I am a <span class="I_gradient">frontend</span> and <span class="I_gradient">desktop developer!</span></span>
+
+
+            <!-- Elements -->
+
+            <div class="indent"></div>
+        
+            <!-- News -->
+
+            <section class="section">
+                <h2 class="headline">News</h2>
+         
+                <div class="inside">
+                    <span class="nothing">Coming soon…</span>
+                </div>
+            </section>
+
+            <!-- New Programs -->
+
+            <section class="section">
+                <h2 class="headline">New Programs</h2>
+         
+                <div class="inside">
+                    <span class="nothing">Coming soon…</span>
+                </div>
+            </section>
+
+            <!-- New Games -->
+
+            <section class="section">
+                <h2 class="headline">New Games</h2>
+         
+                <div class="inside">
+                    <span class="nothing">Coming soon…</span>
+                </div>
+            </section>
+
+            <!-- Other -->
+
+            <section class="section" style="margin-bottom: 75px;">
+                <h2 class="headline">New Modules, Plugins and Mods</h2>
+         
+                <div class="inside">
+                    <span class="nothing">Coming soon…</span>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- Footer -->
+
+        <footer>
+            <table class="footer_table">
+                <tr>
+                    <th>Pages</th>
+                    <th>My Social Networks</th>
+                    <th>My Projects</th>
+                </tr>
+                <tr>
+                    <td><a>Today</a></td>
+                    <td><a>GitHub</a></td>
+                    <td><a>3D Graphic</a></td>
+                </tr>
+                <tr>
+                    <td><a>News</a></td>
+                    <td><a>Scratch</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a>Programs</a></td>
+                    <td><a>X</button></a>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a>Games</a></td>
+                    <td><a>Discord</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a>Plugins</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <span class="footer_span">© NikiSach24 2025</span>
+        </footer>
+
+        <script src="scripts/welcome.js"></script>
+    </body>
 </html>
