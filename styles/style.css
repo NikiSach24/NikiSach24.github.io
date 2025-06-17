@@ -1,0 +1,55 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #FFFFFF;
+        --element-color: #290060CC;
+        --transparent-color: #29006000;
+        --line-color: #290060;
+    }
+
+    .background {
+        background: url("file:///C:/Users/sachu/Documents/MySite/images/picture_dark.png") center/cover no-repeat;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #000000;
+        --element-color: #D0E1F6CC;
+        --transparent-color: #ADD8E600;
+        --line-color: #D0E1F6;
+    }
+
+    .background {
+        background: url("file:///C:/Users/sachu/Documents/MySite/images/picture_light.png") center/cover no-repeat;
+    }
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.indent {
+    width: 100%;
+    height: calc(100% + 65px);
+}

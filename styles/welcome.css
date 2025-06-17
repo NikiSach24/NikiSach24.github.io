@@ -1,0 +1,115 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #FFFFFF;
+        --element-color: #290060CC;
+        --transparent-color: #29006000;
+        --line-color: #290060;
+    }
+
+    .welcome_img {
+        background: url("file:///C:/Users/sachu/Documents/MySite/images/picture_dark.png") center/cover no-repeat;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #000000;
+        --element-color: #D0E1F6CC;
+        --transparent-color: #ADD8E600;
+        --line-color: #D0E1F6;
+    }
+
+    .welcome_img {
+        background: url("file:///C:/Users/sachu/Documents/MySite/images/picture_light.png") center/cover no-repeat;
+    }
+}
+
+
+.I {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color);
+    font-size: 10rem;
+    user-select: none;
+    position: absolute;
+    z-index: 5000;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    text-justify: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.I_gradient {
+    user-select: none;
+    background: linear-gradient(30deg, #00caff, #ff00a2);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textAnim 3s ease-in-out infinite alternate;
+    background-size: 200% 200%;
+}
+
+@keyframes textAnim {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+.welcome_img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+@keyframes welcomeTransparencyImgInactive {
+    from {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    to {
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
+@keyframes welcomeTransparencyImgActive {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+
+@keyframes welcomeTransparencyTextInactive {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes welcomeTransparencyTextActive {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
